@@ -1,0 +1,72 @@
+body {
+  background-color: #dddddd;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  background-color: dimgrey;
+  color: beige;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.grid-item {
+  background-color: #66a7b8;
+  border: 1px solid red;
+  padding: 20px;
+  margin: 15px;
+}
+
+.grid-item > img {
+  width: 100%;
+  height: auto;
+}
+
+/*.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: coral;
+}*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item-vader {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.description {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container-checker {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.container-checker > div:nth-child(odd) {
+  background-color: rgb(42, 197, 171);
+  border: 3px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+}
+.container-checker > div:nth-child(even) {
+  background-color: red;
+  border: 3px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+}
